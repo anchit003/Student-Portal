@@ -4,12 +4,27 @@ table {
     width: 100%;
 }
 
-td, th {
+td {
     border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+	background-color:black;
+	color:white;
+	border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f0;
+    text-align: center;
 }
