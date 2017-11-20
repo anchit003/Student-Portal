@@ -1,0 +1,135 @@
+<!Doctype html>
+<html>
+	<head>
+	<title>web Project1</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	        <script src="main.js"></script>    
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+		<h1>Student Portal Page</h1>
+		<p> Web project</p> 
+		</div>
+		<div class ="container">
+			<div id="formmm" class ="form-group">
+				<form class="form-inline" name="frm1" id="form1">
+				<input placeholder="Enter Roll Number" class="form-control" name="rolll" id="rolll" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+				<input placeholder="Enter Name" class="form-control"id="namee" name="namee">
+				<input placeholder="Enter Stream" class="form-control" id="streamm" name="streamm">
+				<input placeholder="Enter Passout Year" class="form-control" id="passs" name="passs" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+				<submit type = "submit" class="btn btn-primary" id="enter">Submit</submit>
+				<submit type ="submit" class="btn btn-danger"  id="delle" data-target="#demo">Delete</submit>
+				<submit type ="submit" id="del" class="btn btn-success" ">Delete</submit>
+				<submit type ="submit" class="btn btn-primary" data-toggle="modal" data-target="#edit_modal" id="editt" >Edit</submit>
+				<submit type="submit" class="btn btn-success" id="edi" data-toggle="modal" data-target="#myModall">Save</submit>
+			</div>
+		 <div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Row Added</h4>
+				</div>
+				<div class="modal-body">
+					<center>
+					<div>
+					<img src="C:\Users\Anchit Chawla\Downloads\if_tick_green_619543.png"><br>
+					<h3>SUCCESSFUL</h3>
+					</div>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
+				</div>
+				</div>   
+			</div>
+		</div>
+		<div class="container">
+			<table id="list" class="table-hover" border="0">
+				<thead id="abc">
+				<tr>
+					<th>Roll Number</th>
+					<th>Name</th>
+					<th>Stream</th>
+					<th>Passout</th>
+				</tr>
+				</thead>
+				<tbody id="table-body">
+				</tbody>
+			</table>
+		</div>
+		<div id="demo"  class="container">
+			<h4>Make changes in the edit box and click on the save button.</h4>			
+		</div>
+		 <div class="modal fade" id="myModall">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">ROW EDIT</h4>
+					</div>
+				<div class="modal-body">
+				<center>
+					<div>
+						<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/tick_green.png"><br>
+						<h3>SUCCESSFUL</h3>
+					</div>
+				</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
+					</div>
+				</div>   
+			</div>
+		</div>
+			 <div class="modal fade" id="myModalll">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">ROW DELETE</h4>
+						</div>
+							<div class="modal-body">
+							<center>
+								<div>
+								<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/tick_green.png"><br>
+								<h3>SUCCESSFUL</h3>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
+							</div>
+					</div>   
+				</div>
+			</div>	
+				<div class="modal fade" id="edit_modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">EDIT DETAILS</h4>
+							</div>
+							<div class="modal-body">
+								<center>
+									<div>
+										<form name="frm11">
+											<div class="form-group" id="elroll">
+												<label for="rollno">ROLL NO:</label>
+												<input type="text" class="form-control" id="rollno">
+											</div>
+											<button type="button" class="btn btn-default" id="edit_m" data-dismiss="modal">Edit</button>
+										</form>
+									</div>
+							</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
+								</div>
+						</div>   
+					</div>
+				</div>	
+	</body>
+	</html>
+		
+	
