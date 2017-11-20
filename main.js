@@ -6,6 +6,7 @@ let i=1;
 let pos=0;
 let count=0;
 let fg=0;
+	//TO DISPLAY THE INITIAL ENTRY OF THE STUDENTS
 	$( document ).ready(()=> { 
 		$('#del').hide();
 		$('#edi').hide();
@@ -26,6 +27,7 @@ let fg=0;
 		document.getElementById('table-body').appendChild(tr);
 		tr.className="data";
 	});
+//TO DISPLAY THE CHECKBOXES WHEN CLICK ON THE DELETE BUTTON 
 $(document).on('click', '#delle', ()=> 
 {
 	let tra=document.getElementsByClassName("data");
@@ -53,6 +55,7 @@ $(document).on('click', '#delle', ()=>
 			$('#delle').hide();
 }
 });
+// TO DISPLAY THE INFO OF THAT STUDENT WHOM YOU WANT TO EIT
 $(document).on('click', '#edit_m', ()=> 
 {
 	let traa=document.getElementsByClassName("data");
@@ -98,6 +101,7 @@ $(document).on('click', '#edit_m', ()=>
 	$('#delle').hide();
 	$('#editt').hide();
 });
+//TO SUBMIT THE RECORDS IN THE ARRAY USED WHEN CLICKED ON THE SUBMIT BUTTON 
 $(document).on('click', '#enter', ()=> 
 {	
 	if(!(frm1.rolll.value) || !(frm1.namee.value) || !(frm1.streamm.value) || !(frm1.passs.value))
@@ -153,6 +157,7 @@ $(document).on('click', '#enter', ()=>
 	$('#demo').hide();
 	document.getElementById("form1").reset();
 });
+//TO DELETE THE RECORD FROM THE TABLE AFTER CLICKING ON THE CHECKBOXES
 $(document).on('click', '#del', ()=> 
 {
 	let tablee=document.getElementById("table-body");
@@ -185,7 +190,7 @@ $(document).on('click', '#del', ()=>
 		$('#delle').show();
 	$('#myModalll').modal();
 });
-
+// TO COMMIT EDITTED CHANGES
 $(document).on('click', '#edi', ()=> 
 {
 	let eroll=document.getElementById("rolll").value;
